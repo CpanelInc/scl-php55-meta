@@ -14,7 +14,7 @@
 
 Summary:       Package that installs PHP 5.5
 Name:          %scl_name
-Version:       5.5.33
+Version:       5.5.34
 Vendor:        cPanel, Inc.
 Release:       1%{?dist}
 Group:         Development/Languages
@@ -140,6 +140,9 @@ sed -e 's/@SCL@/%{scl_macro_base}%{scl_name_version}/g' -e "s/@VERSION@/${tmp_ve
 
 
 %changelog
+* Thu Apr 1 2016 Jacob Perkins <jacob.perkins@cpanel.net> - 5.5.34-1
+- Bumped version to match PHP version
+
 * Thu Mar 3 2016 Jacob Perkins <jacob.perkins@cpanel.net> - 5.5.33-1
 - Bumped version to match PHP version
 
