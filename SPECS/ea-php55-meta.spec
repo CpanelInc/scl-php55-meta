@@ -14,9 +14,9 @@
 
 Summary:       Package that installs PHP 5.5
 Name:          %scl_name
-Version:       5.5.32
+Version:       5.5.36
 Vendor:        cPanel, Inc.
-Release:       2%{?dist}
+Release:       1%{?dist}
 Group:         Development/Languages
 License:       GPLv2+
 
@@ -32,7 +32,7 @@ BuildRequires: iso-codes
 
 Requires:      %{?scl_prefix}php-common
 Requires:      %{?scl_prefix}php-cli
-#Requires:      %{?scl_prefix}php-pear
+Requires:      %{?scl_prefix}pear
 
 %description
 This is the main package for %scl Software Collection,
@@ -140,6 +140,18 @@ sed -e 's/@SCL@/%{scl_macro_base}%{scl_name_version}/g' -e "s/@VERSION@/${tmp_ve
 
 
 %changelog
+* Thu May 26 2016 Jacob Perkins <jacob.perkins@cpanel.net> 5.5.36-1
+- Bumped version to match PHP version
+
+* Thu Apr 28 2016 Jacob Perkins <jacob.perkins@cpanel.net> 5.5.35-1
+- Bumped version to match PHP version
+
+* Thu Apr 1 2016 Jacob Perkins <jacob.perkins@cpanel.net> - 5.5.34-1
+- Bumped version to match PHP version
+
+* Thu Mar 3 2016 Jacob Perkins <jacob.perkins@cpanel.net> - 5.5.33-1
+- Bumped version to match PHP version
+
 * Tue Feb 9 2016 Jacob Perkins <jacob.perkins@cpanel.net> - 5.5.32-2
 - Fixed previous change log entry
 
